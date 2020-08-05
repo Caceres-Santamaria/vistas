@@ -1,0 +1,281 @@
+@font-face {
+font-family: 'gothiceregular';
+src: url('../font/gothice_-webfont.woff2') format('woff2'),
+        url('../font/gothice_-webfont.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+
+}
+body{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contenedor {
+display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows: auto repeat(3,1fr);
+grid-template-areas: "header     header   header"
+                        "slider  slider   slider"
+                        "content content  content"
+                        "footer  footer   footer";
+width: 100%;
+height: 100vh;
+}
+
+/*---------header--------------*/
+.contenedor .header{
+grid-area: header;
+display: grid;
+padding: 0 20px;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows: auto;
+grid-template-areas: "menu logo iconos"
+                        "nav nav nav";
+align-items: center;
+justify-content: space-between;
+background-image: url(../img/f3-min.gif);
+}
+.logo-flamma {
+grid-area:logo;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.logo-flamma a.logo {
+position: relative;
+text-decoration: none;
+font-family: gothiceregular, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color:#fff;
+font-size: 1.5rem;
+top: -3px;
+}
+.logo-flamma a.logo:focus {
+outline: none;
+}
+.iconos{
+grid-area:iconos;
+display: flex;
+align-items: center;
+}
+.iconos button{
+border: none;
+padding: 10px;
+background: none;
+cursor: pointer;
+font-size: 22px;
+border-radius: 100px;
+width: 40px;
+height: 40px;
+margin-right: 10px;
+}
+.iconos button:hover{
+background: rgba(253, 253, 253, 0.3);
+}
+.iconos button:focus{
+outline:none;
+}
+.iconos button .fas{
+background:auto;
+color: #fff;
+position: relative;
+top:-2.4px;
+}
+.iconos .barra-busqueda{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.iconos .barra-busqueda input{
+min-width:15%;
+width: auto;
+padding: 0 15px;
+height: 23px;
+line-height: 25px;
+border: 1px solid #ccc;
+font-size: 16px;
+font-family: 'Open Sans', sans-serif;
+border-radius: 20px;
+}
+.iconos .barra-busqueda input:focus{
+outline: none;
+}
+/*---------menu--------------*/
+.header .menu{
+grid-area: nav;
+display: flex;
+align-items: center;
+justify-content: center;
+zoom: 1;
+width: 100%;
+background: rgba(0,0,0,.92);
+padding: 8px 8px;
+}
+.header .menu:before {
+content: '';
+display: block;
+}
+.header .menu:after {
+content: '';
+display: table;
+clear: both;
+}
+.header .menu > ul {
+list-style-type: none;
+position: relative;
+display: block;
+font-size: 15px;
+margin: 0;
+padding: 0;
+border-bottom: 1px solid #f0b106;
+zoom: 1;
+}
+.header .menu > ul:before {
+content: '';
+display: block;
+}
+.header .menu > ul:after {
+content: '';
+display: table;
+clear: both;
+}
+.header .menu ul li {
+position: relative;
+display: block;
+float: left;
+margin: 0;
+padding: 0;
+z-index: 1;
+}
+.header .menu li a {
+float: left;
+color: #ebd0b6;
+text-decoration: none;
+height: 24px;
+padding: 9px 15px 0;
+font-weight: normal;
+}
+.header .menu  ul > li:hover,
+.header .menu  ul .active {
+text-decoration: none;
+border-bottom: 2px solid #e29c07;
+}
+.header .menu ul > li:hover a {
+color: #fff;
+}
+.header .menu > ul > .active a {
+color: #fff;
+font-weight: 700;
+}
+.menu li,.menu a{
+outline: none;
+}
+.menu li .home i{
+padding-right: 7px;
+}
+.menu li .home .fas{
+background:auto;
+color: #fff;
+position: relative;
+font-size: 20px;
+}
+
+.menu li > ul{
+display: none;
+position: absolute;
+width: 200px;
+top: 100%;
+left: 0;
+background: rgba(0,0,0,.92);
+padding: 0;
+margin: 0;
+}
+.menu li > ul > li{
+width: 100%;
+padding: 0;
+margin: 0;
+}
+.menu li > ul > li:hover{
+background: #35322f;
+}
+.menu li:hover > ul{
+display: block;
+}
+
+/*---------slider--------------*/
+.contenedor .carousel{
+    grid-area: slider;
+}
+.carousel__contenedor {
+	position: relative;
+	width: 100%;
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border: none;
+	top: calc(50% - 35px);
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+	background: none;
+	color: #fff;
+	opacity: 20%;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+	opacity: 100%;
+}
+
+.carousel__anterior {
+	left: 30px;
+}
+
+.carousel__siguiente {
+	right: 30px;
+}
+
+.carousel__lista {
+	overflow: hidden;
+}
+
+.carousel__elemento {
+	text-align: center;
+}
+
+.carousel__indicadores .glider-dot {
+	display: block;
+	width: 30px;
+	height: 4px;
+	background: #fff;
+	opacity: .2;
+	border-radius: 0;
+}
+
+.carousel__indicadores .glider-dot:hover {
+	opacity: .5;
+}
+
+.carousel__indicadores .glider-dot.active {
+	opacity: 1;
+}
+
+
+
+/*---------content--------------*/
+.contenedor .content{
+    grid-area: content;
+}
+
+
+
+
+
+/*---------footer--------------*/
+.contenedor .footer{
+    grid-area: footer;
+}
