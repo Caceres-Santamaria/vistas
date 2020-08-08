@@ -1,7 +1,7 @@
 window.addEventListener('load', function() {
     new Glider(document.querySelector('.carousel__lista'), {
-        slidesToShow: 1,
-        slidesToScroll: 1,
+        slidesToShow: 2,
+        slidesToScroll: 2,
         dots: '.carousel__indicadores',
         arrows: {
             prev: '.carousel__anterior',
@@ -17,7 +17,7 @@ window.addEventListener('load', function() {
                 }
             }, {
                 // screens greater than >= 1024px
-                breakpoint: 768,
+                breakpoint: 576,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 3

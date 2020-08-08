@@ -285,8 +285,8 @@
     .carousel__siguiente {
         position: absolute;
         display: block;
-        width: 2.5em;
-        height: 2.5em;
+        width: 2.8em;
+        height: 2.8em;
         border: none;
         top: calc(50% - 2.3em);
         cursor: pointer;
@@ -295,6 +295,11 @@
         background: none;
         color: #fff;
         opacity: 30%;
+    }
+    
+    .carousel__anterior .fas,
+    .carousel__siguiente .fas {
+        font-size: 1.4em;
     }
     
     .carousel__anterior:hover,
@@ -311,21 +316,31 @@
     }
     
     .carousel__lista {
-        overflow: hidden;
+        height: 85%;
+        overflow-x: hidden;
+    }
+    
+    .glider-track {
+        height: 85%;
+    }
+    
+    .carousel__indicadores {
+        height: 30%;
+        display: flex;
+        align-items: center;
     }
     
     .carousel__elemento {
-        text-align: center;
-        width: 25%;
+        display: flex;
     }
     
     .carousel__indicadores .glider-dot {
         display: block;
         width: 2em;
-        height: .3em;
+        height: .45em;
         background: #fff;
         opacity: .2;
-        border-radius: 0;
+        border-radius: .2em;
     }
     
     .carousel__indicadores .glider-dot:hover {
@@ -381,6 +396,12 @@
         font-weight: 600;
         font-size: .92em;
         letter-spacing: 1.5px;
+        margin: 0;
+    }
+    
+    .footer p {
+        margin: 0;
+        font-size: .85em;
     }
     
     .footer .descripcion {
@@ -388,7 +409,6 @@
     }
     
     .footer .descripcion p {
-        font-size: .85em;
         text-align: justify;
     }
     
@@ -398,18 +418,15 @@
     
     .footer .horario p {
         display: block;
-        font-size: .85em;
     }
     
     .footer .nosotros {
         grid-area: nosotros;
-        color: #fff;
     }
     
     .footer .nosotros a {
         text-decoration: none;
-        color: #fff;
-        font-size: .84em;
+        color: #FFF;
     }
     
     .footer .img {
@@ -473,6 +490,7 @@
         justify-content: center;
         color: #FFF;
         height: 100%;
+        letter-spacing: .12em;
     }
     
     .derechos .reservados span {
@@ -487,89 +505,73 @@
         body {
             font-size: 14px;
         }
+        .contenedor {
+            grid-template-rows: 120px 200px 1fr auto;
+        }
         /*---------header--------------*/
         .contenedor .header {
-            padding: 0 1.2em;
-            grid-template-columns: .5fr 1fr .5fr;
-            grid-template-rows: auto 3em;
-            grid-template-areas: "menu logo vacio" "vacio logo iconos";
-            justify-content: space-between;
-        }
-        .logo-flamma {
-            grid-area: logo;
-            display: flex;
-            align-items: center;
+            grid-template-rows: 65px 55px;
             justify-content: center;
         }
+        .menu-movil {
+            padding-top: 20px;
+        }
+        .logo-flamma {
+            padding-top: 20px;
+        }
         .iconos {
-            grid-area: nav;
+            grid-area: 2 / 2 / 3 / 4;
         }
-        .iconos button {}
-        .iconos .barra-busqueda button {
-            margin-left: -.3em;
-        }
-        .iconos .barra-busqueda input {}
         .header .menu {
             display: none;
         }
         /*---------slider--------------*/
         .carousel__contenedor {
             width: 90%;
+            height: 100%;
         }
         .carousel__anterior .fas,
         .carousel__siguiente .fas {
             font-size: 1.8em;
         }
-        .carousel__anterior {
-            left: -2.2em;
-        }
-        .carousel__siguiente {
-            right: -2.2em;
-        }
-        .carousel__elemento {
-            text-align: center;
-            width: 50%;
-        }
         .carousel__indicadores .glider-dot {
-            width: 1.5em;
-            height: .4em;
-            border-radius: .2em;
+            height: .5em;
+            border-radius: .3em;
         }
         /*---------content--------------*/
-        .contenedor .content {
-            grid-area: content;
-        }
         /*---------footer--------------*/
         .contenedor .footer {
             grid-template-columns: 1fr;
             grid-template-rows: repeat(7, auto);
             grid-template-areas: "pago" "descripcion" "horario" "nosotros" "img" "redes" "derechos";
-            grid-gap: 1em;
         }
         .contenedor .footer>div {
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-direction: column;
         }
-        .footer p {
-            margin: .2em;
+        .footer .descripcion {
+            flex-direction: column;
         }
         .footer .descripcion p {
             width: 80%;
+        }
+        .footer .horario {
+            flex-direction: column;
+            margin: 0;
+        }
+        .footer .nosotros {
+            flex-direction: column;
         }
         .img img {
             width: 20%;
         }
         .payu img {
-            width: 50%;
+            width: 90%;
         }
         .footer .redes {
-            grid-area: redes;
-            color: #fff;
-            display: flex;
-            align-items: center;
             justify-content: space-evenly;
+            flex-direction: row;
         }
         .derechos {
             height: 2em;
@@ -577,7 +579,82 @@
     }
     /* Small devices (landscape phones, 576px and up) */
     
-    @media (min-width: 576px) and (max-width: 767.98px) {}
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        body {
+            font-size: 15px;
+        }
+        .contenedor {
+            grid-template-rows: 120px 200px 1fr auto;
+        }
+        /*---------header--------------*/
+        .contenedor .header {
+            grid-template-rows: 65px 55px;
+            justify-content: center;
+        }
+        .menu-movil {
+            padding-top: 20px;
+        }
+        .logo-flamma {
+            padding-top: 20px;
+        }
+        .iconos {
+            grid-area: 2 / 2 / 3 / 4;
+        }
+        .header .menu {
+            display: none;
+        }
+        /*---------slider--------------*/
+        .carousel__contenedor {
+            width: 90%;
+            height: 100%;
+        }
+        .carousel__anterior .fas,
+        .carousel__siguiente .fas {
+            font-size: 1.8em;
+        }
+        .carousel__indicadores .glider-dot {
+            height: .5em;
+            border-radius: .3em;
+        }
+        /*---------content--------------*/
+        /*---------footer--------------*/
+        .contenedor .footer {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(7, auto);
+            grid-template-areas: "pago" "descripcion" "horario" "nosotros" "img" "redes" "derechos";
+        }
+        .contenedor .footer>div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .footer .descripcion {
+            flex-direction: column;
+        }
+        .footer .descripcion p {
+            width: 80%;
+        }
+        .footer .horario {
+            flex-direction: column;
+            margin: 0;
+        }
+        .footer .nosotros {
+            flex-direction: column;
+        }
+        .img img {
+            width: 20%;
+        }
+        .payu img {
+            width: 90%;
+        }
+        .footer .redes {
+            justify-content: space-evenly;
+            flex-direction: row;
+        }
+        .derechos {
+            height: 2em;
+        }
+    }
     /* Medium devices (tablets, 768px and up) */
     
     @media (min-width: 768px) and (max-width: 991.98px) {}
