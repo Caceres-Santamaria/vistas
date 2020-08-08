@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/glider.min.css">
     <link rel="stylesheet" href="css/home.css">
-    <title>Home1</title>
+    <title>Home</title>
+    <script src="https://kit.fontawesome.com/cd1bad9cef.js" crossorigin="anonymous"></script>
+    <script src="js/glider.min.js"></script>
+    <script src="js/app.js"></script>
 </head>
+
 <body>
     <div class="contenedor">
         <header class="header">
+            <div class="menu-movil">
+                <button class="menu-boton">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
             <div class="logo-flamma">
-                <a href="#home" class="logo"><h1>flamma</h1></a>
+                <a href="#home" class="logo">
+                    <h1>flamma</h1>
+                </a>
             </div>
             <div class="iconos">
                 <div class="barra-busqueda">
@@ -44,53 +56,84 @@
             </nav>
         </header>
         <div class="carousel">
-			<div class="carousel__contenedor">
-				<button aria-label="Anterior" class="carousel__anterior">
+            <div class="carousel__contenedor">
+                <div class="carousel__lista">
+                    <div class="carousel__elemento">
+                        <img src="img/slider6.jpg" alt="Empire State Building">
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="img/slider7.jpg" alt="Harmony Tower">
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="img/slider8.jpg" alt="Empire State Building">
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="img/slider1.jpg" alt="Harmony Tower">
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="img/slider5.jpg" alt="Harmony Tower">
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="img/slider2.jpg" alt="Rock and Roll Hall of Fame">
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="img/slider3.jpg" alt="Constitution Square - Tower I">
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="img/slider4.jpg" alt="Empire State Building">
+                    </div>
+                </div>
+                <button aria-label="Prvious" class="carousel__anterior">
 					<i class="fas fa-chevron-left"></i>
 				</button>
-				<div class="carousel__lista">
-					<div class="carousel__elemento">
-						<img src="img/2.png" alt="Rock and Roll Hall of Fame">
-					</div>
-					<div class="carousel__elemento">
-						<img src="img/3.png" alt="Constitution Square - Tower I">
-					</div>
-					<div class="carousel__elemento">
-						<img src="img/4.png" alt="Empire State Building">
-					</div>
-					<div class="carousel__elemento">
-						<img src="img/5.png" alt="Harmony Tower">
-					</div>
-					<div class="carousel__elemento">
-						<img src="img/6.png" alt="Empire State Building">
-					</div>
-					<div class="carousel__elemento">
-						<img src="img/7.png" alt="Harmony Tower">
-					</div>
-					<div class="carousel__elemento">
-						<img src="img/8.png" alt="Empire State Building">
-					</div>
-					<div class="carousel__elemento">
-						<img src="img/9.png" alt="Harmony Tower">
-					</div>
-				</div>
-				<button aria-label="Siguiente" class="carousel__siguiente">
+                <button aria-label="Next" class="carousel__siguiente">
 					<i class="fas fa-chevron-right"></i>
-				</button>
-			</div>
-			<div role="tablist" class="carousel__indicadores"></div>
+                </button>
+                <div role="tablist" class="carousel__indicadores"></div>
+            </div>
         </div>
-        
 
         <main class="content">
 
         </main>
         <footer class="footer">
-
+            <div class="payu"><img src="./img/payu.png" alt=""></div>
+            <div class="descripcion">
+                <h2>¿QUIÉNES SOMOS?</h2>
+                <p>
+                    Somos talento colombiano desde el diseño hasta la confección, siendo una comunidad de inspiración para todo aquel que la usa. Tenemos la mente joven y estamos siempre atentos a cada idea para el crecimiento de la marca, esperamos que la gente se identifique
+                    y puedan ser ellos mismos.
+                </p>
+            </div>
+            <div class="horario">
+                <h2>HORARIOS DE ATENCIÓN</h2>
+                <p>Lunes a sábado</p>
+                <p>9:00 am - 7:00 pm</p>
+                <p>Domingos y festivos no hay atención</p>
+            </div>
+            <div class="redes">
+                <a class="instagram" href="https://www.instagram.com/___flamma___/"><i class="fab fa-instagram"></i></a>
+                <a class="facebook" href="https://www.facebook.com/flamma0"><i class="fab fa-facebook-f"></i></a>
+                <a class="whatsapp" href="https://api.whatsapp.com/send?phone=573187251299"><i class="fab fa-whatsapp"></i></a>
+                <a class="tumblr" href="https://666flamma666.tumblr.com/"><i class="fab fa-tumblr"></i></i></a>
+            </div>
+            <div class="nosotros">
+                <h2>NOSOTROS</h2>
+                <p><a href="">About us</a></p>
+                <p>Email:</p>
+                <p><a href="">Términos y condiciones</a></p>
+                <p><a href="">Política de datos</a></p>
+            </div>
+            <div class="img">
+                <a href="#AboutUs" class="llama"><img src="./img/llama.png" alt="..img/llama.png"></a>
+            </div>
+            <div class="derechos">
+                <div class="reservados">
+                    <i class="fas fa-copyright"></i>Copyright 2020 <span>flamma</span> todos los derechos reservados
+                </div>
+            </div>
         </footer>
     </div>
-    <script src="https://kit.fontawesome.com/cd1bad9cef.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
-	<script src="js/app.js"></script>
 </body>
+
 </html>
