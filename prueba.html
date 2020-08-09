@@ -1,33 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/prueba.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/prueba.css" />
     <title>About us</title>
-    <script src="https://kit.fontawesome.com/cd1bad9cef.js" crossorigin="anonymous"></script>
-    <script src="js/glider.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="slider/js/splide.min.js"></script>
+    <script src="./prueba.js"></script>
+    <link rel="stylesheet" href="slider/css/splide.min.css" />
+    <link rel="stylesheet" href="css/prueba.css" />
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="containerOverlay">
-                <div class="containerImg">
-                    <a href="#">
-                        <img src="http://lomejordevalencia.com/images/guia/valencia-albufera.jpg" alt="title img" class="image img-responsive">
-                        <div class="overlay">
-                            <div class="text">
-                                <p>Hover me</p>
-                            </div>
-                        </div><!-- overlay -->
-                    </a>
-                </div><!-- containerImg -->
-            </div><!-- containerOverlay -->
-
-        </div><!-- en row --> 
-    </div><!-- end container -->
+<div class="slider-producto">
+    <div class="splide__container">
+        <div id="primary-slider" class="splide p-splide--primary">
+        <div class="splide__track">
+            <ul class="splide__list">
+            <li class="splide__slide p-splide__slide">
+                <img
+                src="./img/prod1.JPG"
+                alt="Sample Image 01"
+                />
+            </li>
+            <li class="splide__slide p-splide__slide">
+                <img
+                src="./img/prod2.JPG"
+                alt="Sample Image 02"
+                />
+            </li>
+            <li class="splide__slide p-splide__slide">
+                <img
+                src="./img/prod3.JPG"
+                alt="Sample Image 03"
+                />
+            </li>
+            <li class="splide__slide p-splide__slide">
+                <img
+                src="./img/prod4.JPG"
+                alt="Sample Image 04"
+                />
+            </li>
+            </ul>
+        </div>
+        </div>
+        <div id="secondary-slider" class="splide p-splide--secundary">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide p-splide__slide">
+                    <img
+                    src="./img/prod1.JPG"
+                    alt="Sample Image 01"
+                    />
+                </li>
+                <li class="splide__slide p-splide__slide">
+                    <img
+                    src="./img/prod2.JPG"
+                    alt="Sample Image 02"
+                    />
+                </li>
+                <li class="splide__slide p-splide__slide">
+                    <img
+                    src="./img/prod3.JPG"
+                    alt="Sample Image 03"
+                    />
+                </li>
+                <li class="splide__slide p-splide__slide">
+                    <img
+                    src="./img/prod4.JPG"
+                    alt="Sample Image 04"
+                    />
+                </li>
+                </ul>
+        </div>
+        <!-- <div class="splide__arrows p-splide__arrows">
+            <button
+            class="splide__arrow p-splide__arrow splide__arrow--prev p-splide__arrow--prev"
+            >
+            <span class="spi-angle-left"></span>
+            </button>
+            <button
+            class="splide__arrow p-splide__arrow splide__arrow--next p-splide__arrow--next"
+            >
+            <span class="spi-angle-right"></span>
+            </button>
+        </div> -->
+        </div>
+    </div>
+</div>
 </body>
 </html>
