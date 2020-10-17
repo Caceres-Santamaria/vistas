@@ -1,13 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" prefix="og: https://ogp.me/ns/website#">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="canonical" href="https://www.flammashop.com/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#000">
+    <meta name="format-detection" content="telephone=no">
+    <!-- <meta name="format-detection" content="email=no">
+    <meta name="format-detection" content="address=no"> -->
+    <meta property="og:title" content="𝖋𝖑𝖆𝖒𝖒𝖆 | Colombia" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.flammashop.com/" />
+    <meta property="og:image" content="https://www.flammashop.com/img/flammaShop.jpg" />
+    <meta property="og:site_name" content="FLAMMA">
+    <meta property="og:description" content="Si no quema, no es arte.">
+    <meta property="fb:app_id" content="767525517379737">
+    <meta name="twitter:title" content="𝖋𝖑𝖆𝖒𝖒𝖆 | Colombia">
+    <meta name="twitter:description" content="Si no quema, no es arte.">
+    <meta name="twitter:image" content="https://www.flammashop.com/img/flammaShop.jpg">
+    <meta name="twitter:site" content="@#">
+    <meta name="twitter:creator" content="@AlexisCceres14">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="shortcut icon" type="image/png" href="https://www.flammashop.com/img/llama.png">
+    <title>𝖋𝖑𝖆𝖒𝖒𝖆 | Bucaramanga &ndash; Colombia</title>
+    <meta name="description" content="Si no quema, no es arte. Somos talento colombiano desde el diseño hasta la confección siendo una comunidad de inspiración para todo aquel que la usa. Tenemos la mente joven y estamos siempre atentos a cada idea para el crecimiento de la marca esperamos que la gente se identifique y puedan ser ellos mismos">
+    <meta name="author" content="Alexis Caceres & Jenny Santamaria">
+    <meta name="keywords" content="FLAMMA,flammashop,ropa bucaramanga,www.flammashop.com,estilo,flammashop.com">
+    <meta name="google-site-verification" content="j_g4tWxubCe5zQrKEWZfWd-1sUwg0ZL6Sre1vrZ2TAk">
+    <!--Css & JavaScript-->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/glider.min.css">
     <link rel="stylesheet" href="css/home.css">
-    <title>Home</title>
     <script src="https://kit.fontawesome.com/cd1bad9cef.js" crossorigin="anonymous"></script>
     <script src="js/glider.min.js"></script>
     <script src="js/app.js"></script>
@@ -15,43 +40,344 @@
 
 <body>
     <div class="contenedor">
-        <header class="header">
-            <div class="menu-movil">
-                <button class="menu-boton">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
-            <div class="logo-flamma">
-                <a href="#home" class="logo">
-                    <h1>flamma</h1>
-                </a>
-            </div>
-            <div class="iconos">
-                <div class="barra-busqueda">
-                    <input type="text" placeholder="Search">
-                    <button class="search"><i class="fas fa-search"></i></button>
+        <div id="contenedor-menu-main" class="menu-responsive  menu-fijo">
+            <div id="mobile-menu" class="menu-container">
+                <div class="menu-header">
+                    <h3 id="close-menu-main" class="close-menu menu-header__item"><i class="fas fa-times"></i></h3>
+                    <h3 class="menu-header__title menu-header__item">Menú</h3>
                 </div>
-                <button class="usuario"><i class="fas fa-user"></i></button>
-                <button class="carrito"><i class="fas fa-shopping-cart"></i></button>
+                <div class="scroll-menu-main">
+                    <ul id="menu-main" class="menu-main menu">
+                        <li class="menu-item active"><a href="/"><span>Home</span></a></li>
+                        <li class="menu-item"><a href="#" class="menu-main__link" id="item-producto"><span>Productos</span><i class="fas fa-angle-double-right"></i></a></li>
+                        <li class="menu-item"><a href="#" class="menu-main__link" id="item-coleccion"><span>Colecciones</span><i class="fas fa-angle-double-right"></i></a></li>
+                        <li class="menu-item"><a href="#"><span>About Us</span></a></li>
+                        <li class="menu-item iniciar-sesion"><a href="#"><span>Iniciar Sesión / Registro</span></a></li>
+                    </ul>
+                </div>
+                <div class="menu-categoria" id="menu-categoria">
+                    <div class="menu-header">
+                        <h3 class="menu-categoria__volver menu-header__item"><i class="fas fa-angle-double-left"></i><span>Volver</span></h3>
+                    </div>
+                    <div class="contenedor-scroll">
+                        <div class="menu-cat-contenedor">
+                            <a href="#" class="menu-link" style="background-image: url('img/bucket.JPG');">
+                                <div class="menu-link__title">
+                                    <h3>NEW</h3>
+                                </div>
+                            </a>
+                            <a href="#" class="menu-link" style="background-image: url('img/shirt.JPG');">
+                                <div class="menu-link__title">
+                                    <h3>Camisetas</h3>
+                                </div>
+                            </a>
+                            <a href="#" class="menu-link" style="background-image: url('img/prod1.JPG');">
+                                <div class="menu-link__title">
+                                    <h3>Tops</h3>
+                                </div>
+                            </a>
+                            <a href="#" class="menu-link" style="background-image: url('img/prod2.JPG');">
+                                <div class="menu-link__title">
+                                    <h3>Buzos y Chaquetas</h3>
+                                </div>
+                            </a>
+                            <a href="#" class="menu-link" style="background-image: url('img/prod3.JPG');">
+                                <div class="menu-link__title">
+                                    <h3>Pantalones y Shorts</h3>
+                                </div>
+                            </a>
+                            <a href="#" class="menu-link" style="background-image: url('img/prod4.JPG');">
+                                <div class="menu-link__title">
+                                    <h3>Gorras y Accesorios</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-categoria" id="menu-coleccion">
+                    <div class="menu-header">
+                        <h3 class="menu-col__volver menu-header__item"><i class="fas fa-angle-double-left"></i><span>Volver</span></h3>
+                    </div>
+                    <div class="contenedor-scroll">
+                        <div class="menu-cat-contenedor">
+                            <a href="#" class="menu-link" style="background-image: url('img/bucket.JPG');">
+                                <div class="menu-link__title">
+                                    <h3>NEW</h3>
+                                </div>
+                            </a>
+                            <a href="#" class="menu-link" style="background-image: url('img/shirt.JPG');">
+                                <div class="menu-link__title">
+                                    <h3>Básicos</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <nav class="menu">
-                <ul class="menu-list">
-                    <li class="list-item active"><a href="home.html" class="home"><i class="fas fa-home"></i><span>HOME</span></a></li>
-                    <li class="list-item"><a href="#"><span>Productos</span></a>
-                        <ul class="categorias">
-                            <li class="has-sub cateoria"><a href=""><span>T-shirt & tops</span></a></li>
-                            <li class="has-sub cateoria"><a href=""><span>Pants & shorts</span></a></li>
-                            <li class="has-sub cateoria"><a href=""><span>Accesories</span></a></li>
-                            <li class="has-sub cateoria"><a href=""><span>Bucket hats & balaclava</span></a></li>
-                            <li class="has-sub cateoria"><a href=""><span>Hoodies</span></a></li>
+        </div>
+        <div class="menu-responsive carrito-fijo" id="contenedor-carrito">
+            <div class="menu-container">
+                <div class="menu-header">
+                    <h3 id="close-carrito" class="close-menu menu-header__item"><i class="fas fa-times"></i></h3>
+                    <h3 class="menu-header__title menu-header__item">Carrito</h3>
+                </div>
+                <div class="menu-content">
+                    <div class="menu-content__scroll">
+                        <ul class="carrito-contenido__lista">
+                            <li class="carrito-contenido__item carrito-contenido__vacio"><i class="addCarrito"></i> <span>No tienes productos en el carrito.</span></li>
+                            <li class="carrito-contenido__item">
+                                <div class="carrito-contenido__item__img">
+                                    <img src="img/accesorios.JPG" alt="accesorios">
+                                </div>
+                                <div class="carrito-contenido__item__detalle">
+                                    <a href="" class="nombre-producto">Nombre Producto</a>
+                                    <span class="talla-producto">Talla: S</span>
+                                    <span class="cantidad-producto">Cantidad: 2</span>
+                                    <span class="precio-producto">$180.000</span>
+                                </div>
+                            </li>
+                            <li class="carrito-contenido__item">
+                                <div class="carrito-contenido__item__img">
+                                    <img src="img/bucket.JPG" alt="accesorios">
+                                </div>
+                                <div class="carrito-contenido__item__detalle">
+                                    <a href="" class="nombre-producto">Nombre Producto</a>
+                                    <span class="talla-producto">Talla: S</span>
+                                    <span class="cantidad-producto">Cantidad: 2</span>
+                                    <span class="precio-producto">$180.000</span>
+                                </div>
+                            </li>
+                            <li class="carrito-contenido__item">
+                                <div class="carrito-contenido__item__img">
+                                    <img src="img/prod1.JPG" alt="accesorios">
+                                </div>
+                                <div class="carrito-contenido__item__detalle">
+                                    <a href="" class="nombre-producto">Nombre Producto</a>
+                                    <span class="talla-producto">Talla: S</span>
+                                    <span class="cantidad-producto">Cantidad: 2</span>
+                                    <span class="precio-producto">$180.000</span>
+                                </div>
+                            </li>
+                            <li class="carrito-contenido__item">
+                                <div class="carrito-contenido__item__img">
+                                    <img src="img/prod2.JPG" alt="accesorios">
+                                </div>
+                                <div class="carrito-contenido__item__detalle">
+                                    <a href="" class="nombre-producto">Nombre Producto</a>
+                                    <span class="talla-producto">Talla: S</span>
+                                    <span class="cantidad-producto">Cantidad: 2</span>
+                                    <span class="precio-producto">$180.000</span>
+                                </div>
+                            </li>
+                            <li class="carrito-contenido__item">
+                                <div class="carrito-contenido__item__img">
+                                    <img src="img/prod4.JPG" alt="accesorios">
+                                </div>
+                                <div class="carrito-contenido__item__detalle">
+                                    <a href="" class="nombre-producto">Nombre Producto</a>
+                                    <span class="talla-producto">Talla: S</span>
+                                    <span class="cantidad-producto">Cantidad: 2</span>
+                                    <span class="precio-producto">$180.000</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu-content__footer">
+                        <p class="menu-content__footer__subtotal"><span class="subtotal">Subtotal:</span><span class="subtotal-valor">$0</span></p>
+                        <div class="menu-content__footer__botones">
+                            <a href="">Ver mi carrito</a>
+                            <a href="">Ir a pagar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="busqueda" class="busqueda">
+            <div class="busqueda__header">
+                <div class="busqueda__input">
+                    <label for="input-buscar" class="fas fa-search"></label>
+                    <input id="input-buscar" type="text" placeholder="Buscar productos">
+                </div>
+                <div id="busqueda__close" class="busqueda__close close-menu">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div class="busqueda__contenido">
+                <ul id="busqueda__lista" class="busqueda__lista">
+                    <li class="busqueda__item sin-resultados">
+                        <span>¡No se encontraron resultados!</span>
+                    </li>
+                    <li class="busqueda__item">
+                        <div class="busqueda__item__img">
+                            <img src="img/prod2.JPG" alt="accesorios">
+                        </div>
+                        <div class="busqueda__item__detalle">
+                            <a href="" class="nombre-producto">Nombre Producto</a>
+                            <span class="precio-producto">$180.000</span>
+                        </div>
+                    </li>
+                    <li class="busqueda__item">
+                        <div class="busqueda__item__img">
+                            <img src="img/prod2.JPG" alt="accesorios">
+                        </div>
+                        <div class="busqueda__item__detalle">
+                            <a href="" class="nombre-producto">Nombre Producto</a>
+                            <span class="precio-producto">$180.000</span>
+                        </div>
+                    </li>
+                    <li class="busqueda__item">
+                        <div class="busqueda__item__img">
+                            <img src="img/prod2.JPG" alt="accesorios">
+                        </div>
+                        <div class="busqueda__item__detalle">
+                            <a href="" class="nombre-producto">Nombre Producto</a>
+                            <span class="precio-producto">$180.000</span>
+                        </div>
+                    </li>
+                    <li class="busqueda__item">
+                        <div class="busqueda__item__img">
+                            <img src="img/prod2.JPG" alt="accesorios">
+                        </div>
+                        <div class="busqueda__item__detalle">
+                            <a href="" class="nombre-producto">Nombre Producto</a>
+                            <span class="precio-producto">$180.000</span>
+                        </div>
+                    </li>
+                    <li class="busqueda__item">
+                        <div class="busqueda__item__img">
+                            <img src="img/prod2.JPG" alt="accesorios">
+                        </div>
+                        <div class="busqueda__item__detalle">
+                            <a href="" class="nombre-producto">Nombre Producto</a>
+                            <span class="precio-producto">$180.000</span>
+                        </div>
+                    </li>
+                    <li class="busqueda__item">
+                        <div class="busqueda__item__img">
+                            <img src="img/prod2.JPG" alt="accesorios">
+                        </div>
+                        <div class="busqueda__item__detalle">
+                            <a href="" class="nombre-producto">Nombre Producto</a>
+                            <span class="precio-producto">$180.000</span>
+                        </div>
+                    </li>
+                    <li class="busqueda__item">
+                        <div class="busqueda__item__img">
+                            <img src="img/prod2.JPG" alt="accesorios">
+                        </div>
+                        <div class="busqueda__item__detalle">
+                            <a href="" class="nombre-producto">Nombre Producto</a>
+                            <span class="precio-producto">$180.000</span>
+                        </div>
+                    </li>
+                    <li class="busqueda__item">
+                        <div class="busqueda__item__img">
+                            <img src="img/prod2.JPG" alt="accesorios">
+                        </div>
+                        <div class="busqueda__item__detalle">
+                            <a href="" class="nombre-producto">Nombre Producto</a>
+                            <span class="precio-producto">$180.000</span>
+                        </div>
+                    </li>
+                    <li class="busqueda__item">
+                        <div class="busqueda__item__img">
+                            <img src="img/prod2.JPG" alt="accesorios">
+                        </div>
+                        <div class="busqueda__item__detalle">
+                            <a href="" class="nombre-producto">Nombre Producto</a>
+                            <span class="precio-producto">$180.000</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="contenedor-inicio-sesion">
+            <div class="contenedor-inicio-sesion__scroll">
+                <div class="contenedor-formulario">
+                    <form action="" class="form-inicio-sesion" method="post">
+                        <div class="cerrar-inicio-sesion">
+                            <i class="fa fa-close"></i>
+                        </div>
+                        <div class="content-inicio-sesion">
+                            <div class="form-iniciar-sesion__title">
+                                <h2>Iniciar sesión</h2>
+                            </div>
+                            <div class="form-datos-iniciar-sesion">
+                                <input type="text" class="form-input input-login" placeholder="Email/Usuario" id="usuario">
+                                <i class="fa fa-user"></i>
+                            </div>
+                            <div class="form-datos-iniciar-sesion">
+                                <input type="password" class="form-input input-login" placeholder="Contraseña" id="contraseña">
+                                <i class="fa fa-lock"></i>
+                            </div>
+                            <div class="form-iniciar-sesion__boton">
+                                <input type="submit" class="btn-enviar" value="Entrar">
+                            </div>
+                            <div class="form-iniciar-sesion__bottom-text">
+                                <p>¿Aún no estás registrado?</p>
+                                <a class="link" href="#">Entra aquí</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="ir-arriba" id="ir-arriba">
+            <i class="fas fa-angle-up"></i>
+        </div>
+        <header class="header">
+            <div class="banner">
+                <div class="menu-movil">
+                    <a href="javascript:void(0);" class="fas-link">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                    <!--<div class="">
+                        <a class="fas-link" href="#login_side">
+                            <i class="fas fa-user"></i>
+                        </a>
+                    </div>-->
+                </div>
+                <div class="banner__logo">
+                    <a href="#home" class="logo__link">
+                        <h1>flamma</h1>
+                    </a>
+                </div>
+                <div class="banner__iconos">
+                    <div class="icono__search">
+                        <a id="link-buscar" class="fas-link" href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                    <div class="icono__user iniciar-sesion">
+                        <a class="fas-link" href="#login_side"><i class="fas fa-user"></i></a>
+                    </div>
+                    <div class="icono__car">
+                        <a id="link-carrito" class="fas-link" href="#" title="Ver su carrito de compras">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="menu-desktop">
+                <ul class="menu-desktop__list menu-desktop__firstlevel">
+                    <li class="list-item active"><a class="list-item__link home" href="home.html"><i class="fas fa-home"></i><span>HOME</span></a></li>
+                    <li class="list-item"><a class="list-item__link" href="#"><span>Productos</span></a>
+                        <ul class="menu-desktop__list categorias menu-desktop__secondlevel">
+                            <li class="list-item list-item-sub cateoria"><a class="list-item__link" href=""><span>T-shirt & tops</span></a></li>
+                            <li class="list-item list-item-sub cateoria"><a class="list-item__link" href=""><span>Pants & shorts</span></a></li>
+                            <li class="list-item list-item-sub cateoria"><a class="list-item__link" href=""><span>Accesories</span></a></li>
+                            <li class="list-item list-item-sub cateoria"><a class="list-item__link" href=""><span>Bucket hats & balaclava</span></a></li>
+                            <li class="list-item list-item-sub cateoria"><a class="list-item__link" href=""><span>Hoodies</span></a></li>
                         </ul>
                     </li>
-                    <li class="list-item"><a href="#"><span>Colecciones</span></a>
-                        <ul class="colecciones">
-                            <li class="has-sub coleccion"><a href=""><span>Básicos</span></a></li>
+                    <li class="list-item"><a class="list-item__link" href="#"><span>Colecciones</span></a>
+                        <ul class="menu-desktop__list colecciones  menu-desktop__secondlevel">
+                            <li class="list-item list-item-sub coleccion"><a class="list-item__link" href=""><span>Básicos</span></a></li>
+                            <li class="list-item list-item-sub coleccion"><a class="list-item__link" href=""><span>Nuevos</span></a></li>
                         </ul>
                     </li>
-                    <li class="list-item last"><a href="nosotros.html"><span>About us</span></a></li>
+                    <li class="list-item last"><a class="list-item__link" href="nosotros.html"><span>About us</span></a></li>
                 </ul>
             </nav>
         </header>
@@ -94,88 +420,64 @@
         </div>
 
         <main class="content">
-            <div class="containerOverlay">
             <div class="imgcat">
-                <img src="img/shirt.JPG" alt="">
-                <a href="">
-                <div class="overlay">
-                    <div class="text">
-                        <p>T-shirt & tops</p>
+                <a href="" class="imgcat-link">
+                    <img class="imgcat__img" src="img/shirt.JPG" alt="">
+                    <div class="overlay">
+                        <p class="text">T-shirt & tops</p>
                     </div>
-                </div><!-- overlay -->
-            </a>
+                    <!-- overlay -->
+                </a>
             </div>
-        </div>
-        <div class="containerOverlay">
             <div class="imgcat">
-                <img src="img/slider3.jpg" alt="">
-                <a href="">
-                <div class="overlay">
-                    <div class="text">
-                        <p>Pants & shorts</p>
+                <a href="" class="imgcat-link">
+                    <img class="imgcat__img" src="img/slider3.jpg" alt="">
+                    <div class="overlay">
+                        <p class="text">Pants & shorts</p>
                     </div>
-                </div><!-- overlay -->
-            </a>
+                    <!-- overlay -->
+                </a>
             </div>
-        </div>
-        <div class="containerOverlay">
             <div class="imgcat">
-                <img src="img/accesorios.JPG" alt="">
-                <a href="">
-                <div class="overlay">
-                    <div class="text">
-                        <p>Accesories</p>
+                <a href="" class="imgcat-link">
+                    <img class="imgcat__img" src="img/accesorios.JPG" alt="">
+                    <div class="overlay">
+                        <p class="text">Accesories</p>
                     </div>
-                </div><!-- overlay -->
-            </a>
+                    <!-- overlay -->
+                </a>
             </div>
-        </div>
-        <div class="containerOverlay">
             <div class="imgcat">
-                <img src="img/bucket.JPG" alt="">
-                <a href="">
-                <div class="overlay">
-                    <div class="text">
-                        <p>Bucket hats & balaclavas</p>
+                <a href="" class="imgcat-link">
+                    <img class="imgcat__img" src="img/bucket.JPG" alt="">
+                    <div class="overlay">
+                        <p class="text">Bucket hats & balaclavas</p>
                     </div>
-                </div><!-- overlay -->
-            </a>
+                    <!-- overlay -->
+                </a>
             </div>
-        </div>
-        <div class="containerOverlay">
             <div class="imgcat">
-                <img src="img/slider3.jpg" alt="">
-                <a href="">
-                <div class="overlay">
-                    <div class="text">
-                        <p>Hoodies</p>
+                <a href="" class="imgcat-link">
+                    <img class="imgcat__img" src="img/slider3.jpg" alt="">
+                    <div class="overlay">
+                        <p class="text">Hoodies</p>
                     </div>
-                </div><!-- overlay -->
-            </a>
+                    <!-- overlay -->
+                </a>
             </div>
-        </div>
-        <div class="containerOverlay">
             <div class="imgcat">
-                <img src="img/slider3.jpg" alt="">
-                <a href="">
-                <div class="overlay">
-                    <div class="text">
-                        <p>Hover me</p>
+                <a href="" class="imgcat-link">
+                    <img class="imgcat__img" src="img/slider3.jpg" alt="">
+                    <div class="overlay">
+                        <p class="text">Hover me</p>
                     </div>
-                </div><!-- overlay -->
-            </a>
+                    <!-- overlay -->
+                </a>
             </div>
-        </div>
-            
         </main>
         <footer class="footer">
-            <div class="payu"><img src="./img/payu.png" alt=""></div>
             <div class="descripcion">
-                <h2>¿QUIÉNES SOMOS?</h2>
-                <p>
-                    Somos talento colombiano desde el diseño hasta la confección, siendo una comunidad de inspiración para todo aquel que la usa. Tenemos la mente joven y estamos siempre atentos a cada idea para el crecimiento de la marca, esperamos que la gente se identifique
-                    y puedan ser ellos mismos.
-                </p>
+                <h2>Si no quema, no es Arte</h2>
             </div>
             <div class="horario">
                 <h2>HORARIOS DE ATENCIÓN</h2>
@@ -183,29 +485,31 @@
                 <p>9:00 am - 7:00 pm</p>
                 <p>Domingos y festivos no hay atención</p>
             </div>
-            <div class="redes">
-                <a class="instagram" target="_blank" href="https://www.instagram.com/___flamma___/"><i class="fab fa-instagram"></i></a>
-                <a class="facebook" target="_blank" href="https://www.facebook.com/flamma0"><i class="fab fa-facebook-f"></i></a>
-                <a class="whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=573187251299"><i class="fab fa-whatsapp"></i></a>
-                <a class="tumblr" target="_blank" href="https://666flamma666.tumblr.com/"><i class="fab fa-tumblr"></i></i></a>
-            </div>
             <div class="nosotros">
                 <h2>NOSOTROS</h2>
                 <p><a href="nosotros.html">About us</a></p>
-                <p>Email:</p>
+                <p>Email: flammashop@flamma.com</p>
                 <p><a href="condiciones.html">Términos y condiciones</a></p>
                 <p><a href="">Política de datos</a></p>
             </div>
-            <div class="img">
-                <a href="nosotros.html" class="llama"><img src="./img/llama.png" alt="..img/llama.png"></a>
+            <div class="img-contenedor">
+                <a href="nosotros.html" class="img-contenedor__llama"><img src="./img/llama.png" alt="..img/llama.png"></a>
+            </div>
+            <div class="pasarela"><img src="./img/payu.png" alt=""></div>
+            <div class="redes">
+                <a class="instagram" target="_blank" href="https://www.instagram.com/___flamma___/"><i class="fab fa-instagram"></i></a>
+                <a class="facebook" target="_blank" href="https://www.facebook.com/flamma0"><i class="fab fa-facebook-f"></i></a>
+                <a class="whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=573187251299&amp;text=¡Hola!"><i class="fab fa-whatsapp"></i></a>
+                <a class="tumblr" target="_blank" href="https://666flamma666.tumblr.com/"><i class="fab fa-tumblr"></i></i></a>
             </div>
             <div class="derechos">
                 <div class="reservados">
-                    <i class="fas fa-copyright"></i> Copyright 2020 <span> flamma </span> todos los derechos reservados
+                    <i class="fas fa-copyright"></i> Copyright 2020<span> flamma </span>todos los derechos reservados
                 </div>
             </div>
         </footer>
     </div>
+    <script src="js/home.js"></script>
 </body>
 
 </html>
